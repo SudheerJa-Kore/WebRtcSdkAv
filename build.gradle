@@ -5,6 +5,16 @@ plugins {
     id 'maven-publish'
 }
 
-task clean(type: Delete) {
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'com.kore.webrtcsdk'
+            artifactId = 'webrtcsdk'
+            version = '0.1'
+        }
+    }
+}
+
+tasks.register('clean', Delete) {
     delete rootProject.buildDir
 }
