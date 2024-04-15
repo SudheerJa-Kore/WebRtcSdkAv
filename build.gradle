@@ -8,9 +8,9 @@ plugins {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId = 'com.kore.webrtcsdk'
-            artifactId = 'webrtcsdk'
-            version = '0.1'
+            groupId = 'com.github.SudheerJa-Kore'
+            artifactId = 'WebRtcSdkAv'
+            version = '0.2.0'
         }
     }
 }
